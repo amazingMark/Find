@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="90%" />
+
+
+    <!--<RadioGroup-->
+    <!--android:id="@+id/rg_home"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="#ffffff"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/rb_home_home"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1.0"-->
+    <!--android:button="@null"-->
+    <!--android:checked="true"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:text="首页"-->
+    <!--android:textColor="@color/ColorTabText" />-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/rb_home_club"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1.0"-->
+    <!--android:button="@null"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:text="社团"-->
+    <!--android:textColor="@color/ColorTabText" />-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/rb_home_msg"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1.0"-->
+    <!--android:button="@null"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:text="消息"-->
+    <!--android:textColor="@color/ColorTabText" />-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/rb_home_setting"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1.0"-->
+    <!--android:button="@null"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:text="设置"-->
+    <!--android:textColor="@color/ColorTabText" />-->
+    <!--</RadioGroup>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        app:layout_heightPercent="10%">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/rl_main_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="3dp">
+
+            <ImageView
+                android:id="@+id/iv_main_tab_home"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/home_unselected"
+                app:layout_heightPercent="60%" />
+
+
+            <TextView
+                android:id="@+id/tv_main_tab_home"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:text="@string/home" />
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/rl_main_club"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="3dp">
+
+            <ImageView
+                android:id="@+id/iv_main_tab_club"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/selector_club"
+                app:layout_heightPercent="60%" />
+
+
+            <TextView
+                android:id="@+id/tv_main_tab_club"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:text="@string/club" />
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/rl_main_msg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="3dp">
+
+            <ImageView
+                android:id="@+id/iv_main_tab_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/msg_unselected"
+                app:layout_heightPercent="60%" />
+
+
+            <TextView
+                android:id="@+id/tv_main_tab_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:text="@string/msg" />
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/rl_main_setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="3dp">
+
+            <ImageView
+                android:id="@+id/iv_main_tab_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/setting_unselected"
+                app:layout_heightPercent="60%" />
+
+
+            <TextView
+                android:id="@+id/tv_main_tab_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:text="@string/me" />
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </LinearLayout>
+
+
+</android.support.percent.PercentRelativeLayout>
