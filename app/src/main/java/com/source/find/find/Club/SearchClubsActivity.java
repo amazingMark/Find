@@ -1,4 +1,4 @@
-package com.source.find.find.Club;
+package com.source.find.find.club;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

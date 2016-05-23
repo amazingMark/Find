@@ -1,4 +1,4 @@
-package com.source.find.find.Club;
+package com.source.find.find.club;
 
 
 import android.content.Intent;
@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.source.find.find.R;
-import com.source.find.find.activity.CreateClubActivity;
 
 /**
  * A simple {@link Fragment} subclass.

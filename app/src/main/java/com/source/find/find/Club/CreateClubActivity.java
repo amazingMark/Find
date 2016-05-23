@@ -1,4 +1,4 @@
-package com.source.find.find.Club;
+package com.source.find.find.club;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 import com.source.find.find.R;
-import com.source.find.find.activity.MainActivity;
+import com.source.find.find.main.MainActivity;
 
 
 public class CreateClubActivity extends Activity implements View.OnClickListener {

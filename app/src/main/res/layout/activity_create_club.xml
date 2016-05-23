@@ -1,53 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.source.find.find.activity.CreateClubActivity">
+    android:background="@color/ColorContentBg"
+    tools:context=".club.CreateClubActivity">
 
 
-    <FrameLayout
-        android:id="@+id/fl_create_club_title"
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/prl_create_club_title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true">
+        android:layout_height="0dp"
+        android:background="@color/ColorTitleBar"
+        android:gravity="center_vertical"
+        app:layout_heightPercent="10%">
 
-        <ImageView
-            android:id="@+id/iv_create_club_title_bg"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@color/ColorTitleBar" />
-
-        <ImageView
-            android:id="@+id/iv_create_club_title_pre"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/btn_create_club_pre"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_previous"
+            app:layout_heightPercent="60%"
+            app:layout_marginLeftPercent="1%"
+            app:layout_widthPercent="10%" />
 
         <TextView
-            android:id="@+id/tv_create_club_title_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_centerInParent="true"
             android:text="创建社团"
-            android:textColor="#ffffff"
+            android:textColor="@color/ColorTitleText"
             android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/tv_club_title_create"
+        <Button
+            android:id="@+id/btn_create_club_create"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="end|center_vertical"
-            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
             android:text="创建"
-            android:textColor="#ffffff"
+            android:textColor="@color/ColorTitleText"
             android:textSize="16sp" />
-    </FrameLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/prl_create_club_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/prl_create_club_title"
+        android:background="@color/ColorBg"
+        android:gravity="center_vertical"
+        app:layout_heightPercent="15%"
+        app:layout_marginTopPercent="2%">
+
+        <Button
+            android:id="@+id/btn_create_club_add_icon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentStart="true"
+            android:background="@color/ColorBg"
+            android:text="点此添加LOGO图"
+            android:textColor="@color/ColorModuleText"
+            app:layout_heightPercent="80%"
+            app:layout_marginLeftPercent="3%"
+            app:layout_widthPercent="15%" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/btn_create_club_add_icon"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="社团名称"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/ColorLine" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="所在学校"
+                android:singleLine="true" />
+        </LinearLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <EditText
+        android:id="@+id/et_create_club_desc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/prl_create_club_info"
+        android:background="@color/ColorBg"
+        android:gravity="start"
+        android:hint="社团简介"
+        android:scrollbars="vertical"
+        app:layout_heightPercent="30%"
+        app:layout_marginTopPercent="2%" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_create_club_verify"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/et_create_club_desc"
+        android:background="@color/ColorBg"
+        android:gravity="center_vertical"
+        app:layout_heightPercent="10%"
+        app:layout_marginTopPercent="2%">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加入需要审核" />
+
+    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/ColorBg">
+        android:layout_height="0dp"
+        android:layout_below="@id/rl_create_club_verify"
+        android:background="@color/ColorBg"
+        android:gravity="center_vertical"
+        app:layout_heightPercent="10%"
+        app:layout_marginTopPercent="2%">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内容只对社团成员可见" />
 
     </RelativeLayout>
-</RelativeLayout>
+</android.support.percent.PercentRelativeLayout>

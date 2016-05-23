@@ -1,10 +1,11 @@
 <resources>
     <string name="app_name">Find</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="home">首页</string>
     <string name="club">社团</string>
     <string name="msg">消息</string>
     <string name="me">我</string>
+    <string name="chat_group_notice">武汉大学印刷摄影协会成立于1995 年，
+        是一个由喜欢摄影的学生自发申请成立的，为广大摄影爱好者创造交流的平台的协会，
+        以推广摄影，提高会员自身素质，丰富校园文化为目标的群众性组织。</string>
 </resources>

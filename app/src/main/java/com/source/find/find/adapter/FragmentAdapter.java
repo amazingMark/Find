@@ -3,13 +3,12 @@ package com.source.find.find.adapter;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
 
-import com.source.find.find.activity.MainActivity;
-import com.source.find.find.fragment.ClubFrament;
-import com.source.find.find.fragment.HomeFragment;
-import com.source.find.find.fragment.MsgFragment;
-import com.source.find.find.fragment.SettingFragment;
+import com.source.find.find.main.MainActivity;
+import com.source.find.find.club.ClubFrament;
+import com.source.find.find.home.HomeFragment;
+import com.source.find.find.message.MsgFragment;
+import com.source.find.find.setting.SettingFragment;
 
 import java.util.ArrayList;
 import java.util.List;

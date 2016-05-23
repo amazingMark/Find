@@ -1,4 +1,4 @@
-package com.source.find.find.Setting;
+package com.source.find.find.setting;
 
 
 import android.os.Bundle;

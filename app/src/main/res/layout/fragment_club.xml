@@ -1,81 +1,74 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.source.find.find.fragment.ClubFrament">
+    tools:context=".club.ClubFrament">
+
+    <FrameLayout
+        android:id="@+id/fl_club_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%"
+        android:background="@color/ColorTitleBar">
+
+        <TextView
+            android:id="@+id/tv_club_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="社团"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/tv_club_title_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:background="@android:color/transparent"
+            android:text="创建"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </FrameLayout>
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/rl_club_search_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:layout_below="@id/fl_club_title">
+
+        <EditText
+            android:id="@+id/et_club_search_name"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_widthPercent="90%"
+            app:layout_heightPercent="70%"
+            android:background="@drawable/round_edittext"
+            android:layout_centerVertical="true"
+            android:hint="点此搜索你感兴趣的社团吧"/>
+
+    </android.support.percent.PercentRelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/ColorFrameBg"
+        android:layout_below="@id/rl_club_search_bg">
 
-        <FrameLayout
-            android:id="@+id/fl_club_title"
-            android:layout_width="match_parent"
+        <ListView
+            android:id="@+id/iv_club_list"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <ImageView
-                android:id="@+id/iv_club_title_bg"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:background="@color/ColorTitleBar" />
-
-            <TextView
-                android:id="@+id/tv_club_title_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="社团"
-                android:textColor="#ffffff"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/tv_club_title_create"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end|center_vertical"
-                android:layout_marginEnd="10dp"
-                android:text="创建"
-                android:textColor="#ffffff"
-                android:textSize="16sp" />
-        </FrameLayout>
-
-        <EditText
-            android:id="@+id/et_club_search"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/fl_club_title"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"
-            android:background="@drawable/search_frame"
-            android:focusable="false"
-            android:gravity="center_vertical"
-            android:hint="点此搜索你感兴趣的社团吧"
-            android:imeOptions="actionSearch"
-            android:singleLine="true" />
-
-        <View
-            android:id="@+id/v_club_line"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_below="@id/et_club_search"
-            android:background="#000000" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/v_club_line"
-            android:background="#eee">
-
-            <ListView
-                android:id="@+id/iv_club_list"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-            </ListView>
-
-        </RelativeLayout>
-
+        </ListView>
 
     </RelativeLayout>
 
-</FrameLayout>
+
+</android.support.percent.PercentRelativeLayout>

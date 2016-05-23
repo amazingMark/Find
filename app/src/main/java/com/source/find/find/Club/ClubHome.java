@@ -1,4 +1,4 @@
-package com.source.find.find.Club;
+package com.source.find.find.club;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import com.source.find.find.R;
-import com.source.find.find.activity.ChatGroupActivity;
+import com.source.find.find.chat.ChatGroupActivity;
 
 public class ClubHome extends AppCompatActivity implements View.OnClickListener {
 

@@ -1,7 +1,9 @@
-package com.source.find.find.Chat;
+package com.source.find.find.chat;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.source.find.find.R;
 
 public class ChatGroupDetailActivity extends AppCompatActivity {
 

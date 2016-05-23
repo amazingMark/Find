@@ -8,14 +8,34 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.MainActivity">
+        <activity android:name=".main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.CreateClubActivity"></activity>
+        <activity android:name=".club.CreateClubActivity" />
+        <activity android:name=".club.ClubHome" />
+        <activity android:name=".club.SearchClubsActivity" />
+        <activity android:name=".club.ClubDetail" />
+        <activity android:name=".chat.ChatGroupActivity" />
+        <activity android:name=".chat.DefaultChatGroupDetailActivity" />
+        <activity android:name=".chat.ChatGroupDetailActivity" />
+        <activity android:name=".message.CommentOnMe" />
+        <activity android:name=".chat.ApplyForChatGroupActivity" />
+        <activity android:name=".chat.ChatGroupMemberActivity" />
+        <activity android:name=".chat.CreateChatGroupActivity" />
+        <activity android:name=".club.ManageClubMembersActivity" />
+        <activity android:name=".club.AddClubMembersActivity" />
+        <activity android:name=".club.ClubMembersListActivity" />
+        <activity android:name=".club.ApplyForClubActivity" />
+        <activity android:name=".club.SearchClubMembersActivity" />
+        <activity android:name=".club.SetMemberIdActivity" />
+        <activity android:name=".club.CreateActivityActivity" />
+        <activity android:name=".club.CreateVoteActivity" />
+        <activity android:name=".club.CreatePostsActivity" />
+        <activity android:name=".club.AtOthersActivity"></activity>
     </application>
 
 </manifest>

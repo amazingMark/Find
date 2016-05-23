@@ -3,6 +3,8 @@ package com.source.find.find.club;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.source.find.find.R;
+
 public class AtOthersActivity extends AppCompatActivity {
 
     @Override

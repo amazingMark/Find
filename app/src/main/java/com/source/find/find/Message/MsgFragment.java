@@ -1,4 +1,4 @@
-package com.source.find.find.Message;
+package com.source.find.find.message;
 
 
 import android.os.Bundle;
