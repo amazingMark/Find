@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorContentBg"
+    tools:context=".Club.SetMemberIdActivity">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/prl_set_members_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/ColorTitleBar"
+        android:gravity="center_vertical"
+        app:layout_heightPercent="10%">
+
+        <ImageButton
+            android:id="@+id/ib_set_members_title_pre"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_previous"
+            app:layout_heightPercent="60%"
+            app:layout_marginLeftPercent="1%"
+            app:layout_widthPercent="10%" />
+
+        <TextView
+            android:id="@+id/tv_set_members_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置身份"
+            android:textColor="@color/ColorTitleText"
+            android:textSize="24sp" />
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="30%"
+        android:layout_below="@id/prl_set_members_title">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="30%"
+            app:layout_widthPercent="80%"
+            android:background="@color/ColorBg"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="填写TA的身份"/>
+    </android.support.percent.PercentRelativeLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="80%"
+        android:background="@color/Color"/>
+</android.support.percent.PercentRelativeLayout>
