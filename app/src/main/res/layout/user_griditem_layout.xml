@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_marginTopPercent="10%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginBottomPercent="5%"
+        app:layout_marginRightPercent="5%"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="武汉大学原创音乐协会"
+        android:id="@+id/tv_club"
+        android:gravity="center_horizontal"
+        android:background="@drawable/orange_flat_button"
+        android:textColor="@color/white"/>
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navy"
+    tools:context="com.example.find.PersonSetting.AccountSafeActivity">
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTheme"
+        app:layout_heightPercent="9%"
+        android:id="@+id/rl_title">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_back"
+            android:src="@mipmap/back"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            app:layout_marginLeftPercent="5%"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="账号与安全"
+            android:id="@+id/tv_title"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"
+            android:textColor="@android:color/white" />
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_title"
+        app:layout_marginTopPercent="2%"
+        app:layout_heightPercent="7%"
+        android:background="@color/white"
+        android:id="@+id/rl_accountandsafe">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="手机号"
+            app:layout_marginLeftPercent="5%"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="13018068629"
+            app:layout_marginLeftPercent="5%"
+            android:layout_toLeftOf="@+id/im_in_1"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textgrey"
+            android:id="@+id/tv_phone"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/im_in_1"
+            android:src="@mipmap/turn_right"/>
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_accountandsafe"
+        app:layout_marginTopPercent="0.5%"
+        app:layout_heightPercent="7%"
+        android:background="@color/white"
+        android:id="@+id/rl_secret">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="QQ"
+            app:layout_marginLeftPercent="5%"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="已绑定"
+            app:layout_marginLeftPercent="5%"
+            android:layout_toLeftOf="@+id/im_in_2"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textgrey"
+            android:id="@+id/tv_qqsign"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/im_in_2"
+            android:src="@mipmap/turn_right"/>
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_secret"
+        app:layout_marginTopPercent="0.5%"
+        app:layout_heightPercent="7%"
+        android:background="@color/white"
+        android:id="@+id/rl_notice">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="微信"
+            app:layout_marginLeftPercent="5%"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="未绑定"
+            app:layout_marginLeftPercent="5%"
+            android:layout_toLeftOf="@+id/im_in_3"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textgrey"
+            android:id="@+id/tv_weixinsign"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/im_in_3"
+            android:src="@mipmap/turn_right"/>
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_notice"
+        app:layout_marginTopPercent="0.5%"
+        app:layout_heightPercent="7%"
+        android:background="@color/white"
+        android:id="@+id/rl_response">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="新浪微博"
+            app:layout_marginLeftPercent="5%"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="未绑定"
+            app:layout_marginLeftPercent="5%"
+            android:layout_toLeftOf="@+id/im_in_4"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textgrey"
+            android:id="@+id/tv_weibosign"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/turn_right"
+            android:id="@+id/im_in_4"/>
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_response"
+        app:layout_marginTopPercent="2%"
+        app:layout_heightPercent="7%"
+        android:background="@color/white"
+        android:id="@+id/rl_about">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="更新密码"
+            app:layout_marginLeftPercent="5%"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/turn_right"/>
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>

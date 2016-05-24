@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <MyView.RoundImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/head" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="金小洛"
+        android:id="@+id/name"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/head"
+        app:layout_marginLeftPercent="3%"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="今天12:00来自武汉大学印刷摄影协会"
+        android:id="@+id/club"
+        android:layout_below="@+id/name"
+        android:layout_alignStart="@+id/name"
+        android:textSize="13sp"
+        android:textColor="#999999"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#EBEBEB"
+        android:layout_below="@+id/head"
+        android:layout_marginTop="10dp"
+        android:id="@+id/view" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="一个是华丽短暂的梦，一个事残酷漫长的现实。你会怎么选？"
+        android:id="@+id/content"
+        android:layout_below="@+id/view"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/content"
+        android:layout_alignParentStart="true"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView1"
+            android:src="@mipmap/ic_launcher"
+            android:layout_weight="1"
+            android:layout_gravity="top"
+            android:scaleType="fitXY"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:layout_gravity="top"
+            android:scaleType="fitXY"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:layout_gravity="top"
+            android:scaleType="fitXY"
+            />
+    </LinearLayout>
+</android.support.percent.PercentRelativeLayout>

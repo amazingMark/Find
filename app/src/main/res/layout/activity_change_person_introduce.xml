@@ -5,13 +5,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.find.HomePage.ChatGroupActivity">
+    tools:context="com.example.find.loginandregister.ChangePersonIntroduceActivity">
 
     <android.support.percent.PercentRelativeLayout
-        android:layout_height="wrap_content"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/colorTheme"
-        android:id="@+id/title">
+        app:layout_heightPercent="11%"
+        android:id="@+id/relativeLayout">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -27,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="聊天小组"
+            android:text="个人简介"
             android:id="@+id/tv_title"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
@@ -38,33 +39,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="创建"
-            android:id="@+id/tv_create"
-            android:layout_alignParentEnd="true"
+            android:text="保存"
+            android:id="@+id/tv_save"
             android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:textSize="20sp"
+            android:layout_alignParentEnd="true"
+            android:textSize="25sp"
             android:textColor="@android:color/white"
-            app:layout_marginRightPercent="7%"/>
+            app:layout_marginRightPercent="5%"/>
 
     </android.support.percent.PercentRelativeLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="所有聊天小组"
-        android:id="@+id/textView12"
-        android:layout_below="@+id/title"
-        android:layout_alignParentStart="true"
-        app:layout_marginLeftPercent="7%"
-        app:layout_marginTopPercent="3%"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:hint="在这里填写你的简介"
+        android:gravity="top|left"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentEnd="true"
+        />
 
-    <GridView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/gridView"
-        android:layout_below="@+id/textView12"
-        android:numColumns="2"/>
 
 </android.support.percent.PercentRelativeLayout>

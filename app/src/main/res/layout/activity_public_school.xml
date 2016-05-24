@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navy"
+    tools:context="com.example.find.PersonSetting.PublicSchoolActivity">
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTheme"
+        app:layout_heightPercent="9%"
+        android:id="@+id/rl_title">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_back"
+            android:src="@mipmap/back"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            app:layout_marginLeftPercent="5%"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="申请校园活动"
+            android:id="@+id/tv_title"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="发送"
+            android:id="@+id/tv_select"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            app:layout_marginRightPercent="5%"
+            android:textSize="25sp"
+            android:textColor="@android:color/white" />
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rl_title"
+        android:background="@color/white"
+        app:layout_marginTopPercent="2%"
+        app:layout_heightPercent="17.5%"
+        android:id="@+id/rl_picture">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="点此添加活动海报"
+            android:id="@+id/textView10"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+
+
+    </android.support.percent.PercentRelativeLayout>
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_picture"
+        android:background="@color/white"
+        app:layout_marginTopPercent="2%"
+        app:layout_heightPercent="8%"
+        android:id="@+id/rl_name"
+    >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_marginLeftPercent="3%"
+        android:id="@+id/et_school"
+        android:hint="活动名称"
+        android:background="@null"
+        android:singleLine="true"/>
+</android.support.percent.PercentRelativeLayout>
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_name"
+        android:background="@color/white"
+        app:layout_marginTopPercent="2%"
+        app:layout_heightPercent="8%"
+        android:id="@+id/rl_address"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_marginLeftPercent="3%"
+            android:id="@+id/et_address"
+            android:hint="活动地点"
+            android:background="@null"
+            android:singleLine="true"/>
+    </android.support.percent.PercentRelativeLayout>
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_address"
+        android:background="@color/white"
+        app:layout_marginTopPercent="2%"
+        app:layout_heightPercent="8%"
+        android:id="@+id/rl_time"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_marginLeftPercent="3%"
+            android:id="@+id/et_time"
+            android:hint="活动时间"
+            android:background="@null"
+            android:singleLine="true"/>
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_time"
+        android:background="@color/white"
+        app:layout_marginTopPercent="2%"
+        app:layout_heightPercent="20%"
+        android:id="@+id/rl_introduce"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_marginLeftPercent="3%"
+            android:inputType="textMultiLine"
+            android:id="@+id/et_introduce"
+            android:hint="活动简介"
+            android:gravity="left|top"
+            android:maxLines="3"
+            android:background="@null"
+            android:singleLine="true"/>
+    </android.support.percent.PercentRelativeLayout>
+</android.support.percent.PercentRelativeLayout>

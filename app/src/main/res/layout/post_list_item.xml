@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <MyView.RoundImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/head"
+        app:layout_marginLeftPercent="3.5%"/>
+
+
+    <android.support.percent.PercentFrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        app:layout_widthPercent="10%"
+        app:layout_marginRightPercent="3.5%"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/fl_love"
+        android:background="@drawable/grey_flat_button"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/grey_flat_button"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="70%"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/love"
+            android:id="@+id/im_love"
+            app:layout_marginLeftPercent="5%"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="right|center_vertical"
+            android:id="@+id/tv_lovenum"
+            android:text="10"
+            app:layout_marginRightPercent="10%"
+            />
+    </android.support.percent.PercentFrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="金小洛"
+        android:id="@+id/name"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/head"
+        app:layout_marginLeftPercent="3%"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="今天12:00"
+        android:id="@+id/time"
+        android:layout_below="@+id/name"
+        android:layout_alignStart="@+id/name"
+        android:textSize="13sp"
+        android:textColor="#999999"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="一个是华丽短暂的梦，一个事残酷漫长的现实。你会怎么选？"
+        android:id="@+id/content"
+        android:layout_below="@+id/time"
+        android:layout_alignRight="@+id/fl_love"
+        android:layout_alignStart="@+id/name"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_blank">
+
+
+    </RelativeLayout>
+</android.support.percent.PercentRelativeLayout>

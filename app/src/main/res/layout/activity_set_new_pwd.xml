@@ -5,13 +5,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.find.HomePage.ChatGroupActivity">
+    android:background="@color/navy"
+    tools:context="com.example.find.PersonSetting.SetNewPwdActivity">
 
     <android.support.percent.PercentRelativeLayout
-        android:layout_height="wrap_content"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/colorTheme"
-        android:id="@+id/title">
+        app:layout_heightPercent="9%"
+        android:id="@+id/rl_title">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -27,44 +29,55 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="聊天小组"
+            android:text="设置新密码"
             android:id="@+id/tv_title"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
             android:textSize="25sp"
             android:textColor="@android:color/white" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="创建"
-            android:id="@+id/tv_create"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:textSize="20sp"
-            android:textColor="@android:color/white"
-            app:layout_marginRightPercent="7%"/>
 
     </android.support.percent.PercentRelativeLayout>
 
-    <TextView
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="所有聊天小组"
-        android:id="@+id/textView12"
-        android:layout_below="@+id/title"
+        app:layout_heightPercent="8%"
+        app:layout_marginTopPercent="5%"
+        app:layout_marginLeftPercent="3%"
+        app:layout_marginRightPercent="3%"
+        android:id="@+id/et_newpwd"
+        android:layout_below="@+id/rl_title"
         android:layout_alignParentStart="true"
-        app:layout_marginLeftPercent="7%"
-        app:layout_marginTopPercent="3%"/>
+        android:layout_alignParentEnd="true"
+        android:background="@color/white"
+        android:hint="    请输入新密码"/>
 
-    <GridView
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/gridView"
-        android:layout_below="@+id/textView12"
-        android:numColumns="2"/>
+        app:layout_heightPercent="8%"
+        android:layout_below="@+id/et_newpwd"
+        android:id="@+id/et_newpwd_again"
+        app:layout_marginTopPercent="0.5%"
+        android:background="@color/white"
+        android:hint="    请重复新密码"
+        android:layout_alignStart="@+id/et_newpwd"
+        android:layout_alignEnd="@+id/et_newpwd" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确认"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:id="@+id/bt_submit"
+        android:layout_below="@+id/et_newpwd_again"
+        app:layout_marginTopPercent="6.5%"
+        android:layout_alignEnd="@+id/et_newpwd_again"
+        android:layout_alignStart="@+id/et_newpwd_again"
+        android:background="@drawable/orange_flat_button"/>
+
 
 </android.support.percent.PercentRelativeLayout>
+
