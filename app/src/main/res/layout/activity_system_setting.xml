@@ -5,24 +5,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/navy"
-    tools:context="com.example.find.PersonSetting.SystemSettingActivity">
+    android:background="@color/ColorContentBg"
+    tools:context=".setting.SystemSettingActivity">
     <android.support.percent.PercentRelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/colorTheme"
+    android:background="@color/ColorUniversal"
     app:layout_heightPercent="9%"
     android:id="@+id/rl_title">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/iv_back"
-        android:src="@mipmap/back"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_centerVertical="true"
-        app:layout_marginLeftPercent="5%"/>
+        <ImageButton
+            android:id="@+id/ib_prl_register_title_pre"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@mipmap/back_previous"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="70%"
+            app:layout_marginLeftPercent="3%"
+            app:layout_widthPercent="10%"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -44,7 +45,7 @@
         android:layout_below="@+id/rl_title"
         app:layout_marginTopPercent="2%"
         app:layout_heightPercent="7%"
-        android:background="@color/white"
+        android:background="@color/ColorBg"
         android:id="@+id/rl_accountandsafe">
 
         <TextView
@@ -70,7 +71,7 @@
         android:layout_below="@+id/rl_accountandsafe"
         app:layout_marginTopPercent="2%"
         app:layout_heightPercent="7%"
-        android:background="@color/white"
+        android:background="@color/ColorBg"
         android:id="@+id/rl_secret">
 
         <TextView
@@ -96,7 +97,7 @@
         android:layout_below="@+id/rl_secret"
         app:layout_marginTopPercent="0.5%"
         app:layout_heightPercent="7%"
-        android:background="@color/white"
+        android:background="@color/ColorBg"
         android:id="@+id/rl_notice">
 
         <TextView
@@ -122,7 +123,7 @@
         android:layout_below="@+id/rl_notice"
         app:layout_marginTopPercent="2%"
         app:layout_heightPercent="7%"
-        android:background="@color/white"
+        android:background="@color/ColorBg"
         android:id="@+id/rl_response">
 
         <TextView
@@ -148,7 +149,7 @@
         android:layout_below="@+id/rl_response"
         app:layout_marginTopPercent="0.5%"
         app:layout_heightPercent="7%"
-        android:background="@color/white"
+        android:background="@color/ColorBg"
         android:id="@+id/rl_about">
 
         <TextView
@@ -176,7 +177,7 @@
         app:layout_marginTopPercent="3%"
         android:layout_centerVertical="true"
         android:layout_alignParentEnd="true"
-        android:background="@color/white"
+        android:background="@color/ColorBg"
         android:layout_below="@+id/rl_about"
         android:textColor="@android:color/holo_red_dark"/>
 

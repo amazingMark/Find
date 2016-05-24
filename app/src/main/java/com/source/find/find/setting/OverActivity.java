@@ -8,14 +8,14 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 
-import com.example.find.R;
+
+import com.source.find.find.R;
+import com.source.find.find.adapter.GridViewAdapter;
+import com.source.find.find.interfaceimpl.SchoolActivityOperator;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-
-import Adapter.GridViewAdapter;
-import InterfaceRealization.SchoolActivityOperator;
 
 public class OverActivity extends AppCompatActivity {
 

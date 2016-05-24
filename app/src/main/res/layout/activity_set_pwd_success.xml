@@ -5,13 +5,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/navy"
-    tools:context="com.example.find.PersonSetting.SetPwdSuccessActivity">
+    android:background="@color/ColorBg"
+    tools:context=".setting.SetPwdSuccessActivity">
 
     <android.support.percent.PercentRelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorTheme"
+        android:background="@color/ColorUniversal"
         app:layout_heightPercent="9%"
         android:id="@+id/rl_title">
 
@@ -44,7 +44,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="修改密码成功"
         android:id="@+id/textView15"
-        android:textColor="@color/textgrey"
+        android:textColor="@color/ColorModuleText"
         android:layout_below="@+id/imageView5"
         android:layout_centerHorizontal="true"
         app:layout_marginTopPercent="5%" />
@@ -57,7 +57,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
-        android:textColor="@color/white"
+        android:textColor="@color/ColorBg"
         android:textSize="20sp"
         android:background="@drawable/orange_flat_button"
         app:layout_marginLeftPercent="3%"

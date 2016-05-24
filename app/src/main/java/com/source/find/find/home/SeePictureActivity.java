@@ -15,13 +15,15 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.example.find.R;
+
+import com.source.find.find.R;
+import com.source.find.find.adapter.HomePageActivityAdapter;
+import com.source.find.find.tool.HandleOther;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import Adapter.HomePageActivityAdapter;
-import Tool.HandleOther;
+
 
 public class SeePictureActivity extends AppCompatActivity {
 

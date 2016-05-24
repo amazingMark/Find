@@ -2,7 +2,7 @@ package com.source.find.find.home;
 
 
 import android.app.Activity;
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -14,7 +14,8 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.example.find.R;
+import com.source.find.find.R;
+import com.source.find.find.adapter.HomePageListViewAdapter;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -24,7 +25,7 @@ import java.util.Map;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 
-import Adapter.HomePageListViewAdapter;
+
 
 /**
  * Created by hanjun on 2016/5/15.

@@ -1,12 +1,12 @@
 package com.source.find.find.setting;
-
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.find.R;
+import com.source.find.find.R;
+
 
 /**
  * Created by hanjun on 2016/5/24.

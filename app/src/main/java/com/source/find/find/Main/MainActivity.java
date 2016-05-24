@@ -110,19 +110,19 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
 
         switch (position) {
             case PAGE_ONE:
-                ((ImageView) findViewById(R.id.iv_main_tab_home)).setImageResource(R.drawable.home_unselected);
+                ((ImageView) findViewById(R.id.iv_main_tab_home)).setImageResource(R.mipmap.home_unselected);
                 ((TextView) findViewById(R.id.tv_main_tab_home)).setTextColor(getResources().getColor(R.color.ColorTabText));
                 break;
             case PAGE_TWO:
-                ((ImageView) findViewById(R.id.iv_main_tab_club)).setImageResource(R.drawable.club_unselected);
+                ((ImageView) findViewById(R.id.iv_main_tab_club)).setImageResource(R.mipmap.club_unselected);
                 ((TextView) findViewById(R.id.tv_main_tab_club)).setTextColor(getResources().getColor(R.color.ColorTabText));
                 break;
             case PAGE_THREE:
-                ((ImageView) findViewById(R.id.iv_main_tab_msg)).setImageResource(R.drawable.msg_unselected);
+                ((ImageView) findViewById(R.id.iv_main_tab_msg)).setImageResource(R.mipmap.msg_unselected);
                 ((TextView) findViewById(R.id.tv_main_tab_msg)).setTextColor(getResources().getColor(R.color.ColorTabText));
                 break;
             case PAGE_FOUR:
-                ((ImageView) findViewById(R.id.iv_main_tab_setting)).setImageResource(R.drawable.setting_unselected);
+                ((ImageView) findViewById(R.id.iv_main_tab_setting)).setImageResource(R.mipmap.setting_unselected);
                 ((TextView) findViewById(R.id.tv_main_tab_setting)).setTextColor(getResources().getColor(R.color.ColorTabText));
                 break;
         }
@@ -132,19 +132,19 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
 
         switch (position) {
             case PAGE_ONE:
-                ((ImageView) findViewById(R.id.iv_main_tab_home)).setImageResource(R.drawable.home_selected);
+                ((ImageView) findViewById(R.id.iv_main_tab_home)).setImageResource(R.mipmap.home_selected);
                 ((TextView) findViewById(R.id.tv_main_tab_home)).setTextColor(getResources().getColor(R.color.ColorTitleBar));
                 break;
             case PAGE_TWO:
-                ((ImageView) findViewById(R.id.iv_main_tab_club)).setImageResource(R.drawable.club_selected);
+                ((ImageView) findViewById(R.id.iv_main_tab_club)).setImageResource(R.mipmap.club_selected);
                 ((TextView) findViewById(R.id.tv_main_tab_club)).setTextColor(getResources().getColor(R.color.ColorTitleBar));
                 break;
             case PAGE_THREE:
-                ((ImageView) findViewById(R.id.iv_main_tab_msg)).setImageResource(R.drawable.msg_selected);
+                ((ImageView) findViewById(R.id.iv_main_tab_msg)).setImageResource(R.mipmap.msg_selected);
                 ((TextView) findViewById(R.id.tv_main_tab_msg)).setTextColor(getResources().getColor(R.color.ColorTitleBar));
                 break;
             case PAGE_FOUR:
-                ((ImageView) findViewById(R.id.iv_main_tab_setting)).setImageResource(R.drawable.setting_selected);
+                ((ImageView) findViewById(R.id.iv_main_tab_setting)).setImageResource(R.mipmap.setting_selected);
                 ((TextView) findViewById(R.id.tv_main_tab_setting)).setTextColor(getResources().getColor(R.color.ColorTitleBar));
                 break;
         }

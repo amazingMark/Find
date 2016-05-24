@@ -47,8 +47,8 @@
             android:layout_gravity="right|center_vertical"
             android:id="@+id/tv_lovenum"
             android:text="10"
-            app:layout_marginRightPercent="10%"
-            />
+            app:layout_marginRightPercent="10%" />
+
     </android.support.percent.PercentFrameLayout>
 
     <TextView

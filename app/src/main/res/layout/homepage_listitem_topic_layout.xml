@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:text="秀出你见过最美的风景吧"
         android:id="@+id/topic_title"
-        android:textColor="@color/white"
+        android:textColor="@color/ColorBg"
         android:textSize="15sp"
         android:layout_gravity="center"/>
 </android.support.percent.PercentFrameLayout>

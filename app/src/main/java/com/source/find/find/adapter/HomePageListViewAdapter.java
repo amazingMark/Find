@@ -15,7 +15,10 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.find.R;
+
+import com.source.find.find.scrollpicsview.RoundImageView;
+import com.source.find.find.scrollpicsview.ScrollViewPager;
+import com.source.find.find.R;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
@@ -25,10 +28,7 @@ import java.util.Map;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
-
-import MyView.MyViewPager;
-import MyView.RoundImageView;
-import Tool.ViewPagerScroller;
+import com.source.find.find.tool.ViewPagerScroller;
 
 /**
  * Created by hanjun on 2016/5/14.
@@ -112,7 +112,7 @@ public class HomePageListViewAdapter extends BaseAdapter {
                             parent, false);
 
                     holder1 = new ViewHolder1();
-                    holder1.vp_activity = (MyViewPager) convertView
+                    holder1.vp_activity = (ScrollViewPager) convertView
                             .findViewById(R.id.vp_activity);
                     convertView.setTag(holder1);
                     break;
@@ -198,7 +198,7 @@ public class HomePageListViewAdapter extends BaseAdapter {
     }
 
     public class ViewHolder1 {
-        MyViewPager vp_activity;
+        ScrollViewPager vp_activity;
     }
 
     public class ViewHolder2 {
@@ -215,7 +215,7 @@ public class HomePageListViewAdapter extends BaseAdapter {
         ImageView[] picture = new ImageView[3];
     }
 
-    public void handleViewPager(MyViewPager vp_activity){
+    public void handleViewPager(ScrollViewPager vp_activity){
 
         vp_activity.setAdapter(new HomePageActivityAdapter(mViews));
         vp_activity.setOnPageChangeListener(new PageChangeListener(viewLists,vp_activity));

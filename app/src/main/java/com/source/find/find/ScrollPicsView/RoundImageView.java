@@ -1,4 +1,4 @@
-package com.source.find.find.ScrollPicsView;
+package com.source.find.find.scrollpicsview;
 
 /**
  * Created by hanjun on 2016/4/12.
@@ -19,7 +19,7 @@ import android.graphics.drawable.NinePatchDrawable;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
-import com.example.find.R;
+import com.source.find.find.R;
 
 
 /**

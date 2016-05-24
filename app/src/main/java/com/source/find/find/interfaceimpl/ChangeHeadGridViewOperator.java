@@ -7,8 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.example.find.HomePage.GridViewInterface;
-import com.example.find.R;
+
+import com.source.find.find.R;
+import com.source.find.find.home.GridViewInterface;
 
 import java.util.ArrayList;
 import java.util.Map;

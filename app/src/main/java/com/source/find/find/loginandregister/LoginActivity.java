@@ -7,7 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.find.R;
+import com.source.find.find.R;
+
 
 public class LoginActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.source.find.find.Tool;
+package com.source.find.find.tool;
 
 import android.app.Activity;
 import android.os.Build;

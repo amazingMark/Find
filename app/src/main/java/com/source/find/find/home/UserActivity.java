@@ -15,15 +15,17 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.ListView;
 
-import com.example.find.R;
+
+import com.source.find.find.R;
+import com.source.find.find.adapter.GridViewAdapter;
+import com.source.find.find.interfaceimpl.UserGridViewOperator;
+import com.source.find.find.interfaceimpl.UserListViewOperator;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import Adapter.GridViewAdapter;
-import InterfaceRealization.UserGridViewOperator;
-import InterfaceRealization.UserListViewOperator;
+
 
 public class UserActivity extends AppCompatActivity {
 

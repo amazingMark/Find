@@ -1,9 +1,9 @@
 package com.source.find.find.club;
 
-
+import android.support.v4.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,9 +11,7 @@ import android.widget.TextView;
 
 import com.source.find.find.R;
 
-/**
- * A simple {@link Fragment} subclass.
- */
+
 public class ClubFrament extends Fragment {
 
     private TextView mCreate;

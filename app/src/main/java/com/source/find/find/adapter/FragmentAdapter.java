@@ -1,14 +1,17 @@
 package com.source.find.find.adapter;
 
+
+
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+
+import com.source.find.find.home.HomePageFragment;
 import com.source.find.find.main.MainActivity;
 import com.source.find.find.club.ClubFrament;
-import com.source.find.find.home.HomeFragment;
 import com.source.find.find.message.MsgFragment;
-import com.source.find.find.setting.SettingFragment;
+import com.source.find.find.setting.PersonSettingFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,17 +22,17 @@ import java.util.List;
 public class FragmentAdapter extends FragmentPagerAdapter {
 
     private List<Fragment> mFragmentList = new ArrayList<>();
-    private HomeFragment mHomeFragment;
+    private HomePageFragment mHomeFragment;
     private ClubFrament mClubFragment;
     private MsgFragment mMsgFragment;
-    private SettingFragment mSettingFragment;
+    private PersonSettingFragment mSettingFragment;
 
     public FragmentAdapter(FragmentManager fm) {
         super(fm);
-        mHomeFragment = new HomeFragment();
+        mHomeFragment = new HomePageFragment();
         mClubFragment = new ClubFrament();
         mMsgFragment = new MsgFragment();
-        mSettingFragment = new SettingFragment();
+        mSettingFragment = new PersonSettingFragment();
         mFragmentList.add(mHomeFragment);
         mFragmentList.add(mClubFragment);
         mFragmentList.add(mMsgFragment);
@@ -61,4 +64,27 @@ public class FragmentAdapter extends FragmentPagerAdapter {
         }
         return fragment;
     }
+
+//
+//    @Override
+//    public android.support.v4.app.Fragment getItem(int position) {
+//
+//        android.support.v4.app.Fragment fragment = null;
+//        switch (position) {
+//            case MainActivity.PAGE_ONE:
+//                fragment = mFragmentList.get(MainActivity.PAGE_ONE);
+//                break;
+//            case MainActivity.PAGE_TWO:
+//                fragment = mFragmentList.get(MainActivity.PAGE_TWO);
+//                break;
+//            case MainActivity.PAGE_THREE:
+//                fragment = mFragmentList.get(MainActivity.PAGE_THREE);
+//                break;
+//            case MainActivity.PAGE_FOUR:
+//                fragment = mFragmentList.get(MainActivity.PAGE_FOUR);
+//                break;
+//
+//        }
+//        return fragment;
+//    }
 }

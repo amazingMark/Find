@@ -11,7 +11,6 @@
         android:id="@+id/gl_club"
         android:layout_below="@+id/rl_head"
         android:numColumns="2"
-
     />
 
     <android.support.percent.PercentRelativeLayout
@@ -23,7 +22,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/navy"
+            android:background="@color/ColorContentBg"
             android:id="@+id/divider_3"
             app:layout_heightPercent="20%"
             />

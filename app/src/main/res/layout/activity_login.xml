@@ -10,19 +10,20 @@
     <android.support.percent.PercentRelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorTheme"
+        android:background="@color/ColorUniversal"
         app:layout_heightPercent="11%"
         android:id="@+id/relativeLayout">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/iv_back"
-            android:src="@mipmap/back"
-            android:layout_alignParentLeft="true"
+        <ImageButton
+            android:id="@+id/ib_prl_register_title_pre"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@mipmap/back_previous"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
-            app:layout_marginLeftPercent="5%"/>
+            app:layout_heightPercent="70%"
+            app:layout_marginLeftPercent="3%"
+            app:layout_widthPercent="10%"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -43,7 +44,7 @@
         android:layout_below="@+id/relativeLayout"
         android:layout_alignLeft="@+id/relativeLayout"
         android:layout_alignStart="@+id/relativeLayout"
-        android:background="@color/LoginBackGround">
+        android:background="@color/ColorContentBg">
 
         <EditText
             android:layout_width="wrap_content"
@@ -79,7 +80,7 @@
             android:layout_below="@+id/et_pwd"
             android:layout_alignEnd="@+id/et_pwd"
             app:layout_marginTopPercent="1%"
-            android:textColor="@color/blue" />
+            android:textColor="@color/ColorBlue" />
 
         <Button
             android:layout_width="wrap_content"
@@ -100,7 +101,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="没有账号？点此注册"
             android:id="@+id/tv_register"
-            android:textColor="@color/blue"
+            android:textColor="@color/ColorBlue"
             android:layout_below="@+id/bt_submit"
             android:layout_centerHorizontal="true"
             app:layout_marginTopPercent="4%" />

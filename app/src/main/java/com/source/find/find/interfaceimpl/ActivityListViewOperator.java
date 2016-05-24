@@ -7,8 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.example.find.HomePage.GridViewInterface;
-import com.example.find.R;
+
+import com.source.find.find.R;
+import com.source.find.find.home.GridViewInterface;
 
 import java.util.ArrayList;
 import java.util.Map;
@@ -16,7 +17,7 @@ import java.util.Map;
 /**
  * Created by hanjun on 2016/5/23.
  */
-public class ActivityListViewOperator implements GridViewInterface{
+public class ActivityListViewOperator implements GridViewInterface {
 
     public View handle(View convertView, ViewGroup parent, int position,
                        Context context, ArrayList<Map<String, Object>> list){

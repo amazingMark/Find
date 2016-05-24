@@ -30,7 +30,7 @@
             android:id="@+id/title"
             android:layout_gravity="center_horizontal"
             app:layout_marginTopPercent="30%"
-            android:textColor="@color/white"/>
+            android:textColor="@color/ColorBg"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -40,6 +40,6 @@
             android:id="@+id/content"
             android:layout_gravity="center_horizontal|bottom"
             app:layout_marginBottomPercent="30%"
-            android:textColor="@color/white"/>
+            android:textColor="@color/ColorBg"/>
     </android.support.percent.PercentFrameLayout>
 </android.support.percent.PercentRelativeLayout>

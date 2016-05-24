@@ -9,14 +9,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ListView;
 
-import com.example.find.R;
+
+import com.source.find.find.R;
+import com.source.find.find.adapter.GridViewAdapter;
+import com.source.find.find.interfaceimpl.TopicListViewOperator;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import Adapter.GridViewAdapter;
-import InterfaceRealization.TopicListViewOperator;
 
 public class TopicActivity extends AppCompatActivity {
 

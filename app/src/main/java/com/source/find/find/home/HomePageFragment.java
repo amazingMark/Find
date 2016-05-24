@@ -1,8 +1,8 @@
 package com.source.find.find.home;
 
-import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +11,8 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-import com.example.find.R;
+import com.source.find.find.R;
+
 
 /**
  * Created by hanjun on 2016/5/23.

@@ -7,7 +7,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-import com.example.find.R;
+import com.source.find.find.R;
+
 
 public class ChatActivity extends AppCompatActivity {
 

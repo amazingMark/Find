@@ -64,7 +64,7 @@
             app:layout_widthPercent="15%"
             app:layout_marginLeftPercent="5%"
             android:scaleType="fitCenter"
-            android:src="@drawable/comment_icon"/>
+            android:src="@mipmap/comment_icon"/>
 
         <TextView
             android:layout_width="wrap_content"

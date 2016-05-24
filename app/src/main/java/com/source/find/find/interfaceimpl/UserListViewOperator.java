@@ -8,13 +8,15 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.find.HomePage.GridViewInterface;
-import com.example.find.R;
+
+import com.source.find.find.R;
+import com.source.find.find.home.GridViewInterface;
+import com.source.find.find.scrollpicsview.RoundImageView;
 
 import java.util.ArrayList;
 import java.util.Map;
 
-import MyView.RoundImageView;
+
 
 /**
  * Created by hanjun on 2016/5/20.

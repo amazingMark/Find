@@ -3,7 +3,8 @@ package com.source.find.find.loginandregister;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.example.find.R;
+import com.source.find.find.R;
+
 
 public class ChangePersonIntroduceActivity extends AppCompatActivity {
 

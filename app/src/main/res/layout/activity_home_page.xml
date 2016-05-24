@@ -1,80 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.percent.PercentRelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomePage.HomePageActivity">
+    tools:context=".home.HomePageFragment">
 
     <android.support.percent.PercentRelativeLayout
-        android:layout_height="wrap_content"
+        android:id="@+id/title"
         android:layout_width="match_parent"
-        android:background="@color/colorTheme"
-        android:id="@+id/title">
+        android:layout_height="wrap_content"
+        android:background="@color/ColorUniversal">
 
         <RadioGroup
             android:id="@+id/rg_group"
-            android:layout_margin="10dip"
             android:layout_width="wrap_content"
-            app:layout_widthPercent="50%"
-            app:layout_heightPercent="6%"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:orientation="horizontal"
             android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true">
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_margin="10dip"
+            android:orientation="horizontal"
+            app:layout_heightPercent="6%"
+            app:layout_widthPercent="50%">
+
             <RadioButton
                 android:id="@+id/rb_introduce"
-                android:layout_height="wrap_content"
                 android:layout_width="0dip"
-                android:layout_weight="1"
-                android:button="@null"
-                android:text="推荐"
-                android:checked="true"
-                android:textSize="15sp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/rb_bg_01"
+                android:button="@null"
+                android:checked="true"
                 android:gravity="center"
-                android:paddingTop="2dp"
                 android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:text="推荐"
                 android:textColor="@drawable/title_text_sel"
-                android:background="@drawable/rb_bg_01"/>
+                android:textSize="15sp" />
 
             <RadioButton
                 android:id="@+id/rb_club"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_width="0dip"
-                android:layout_weight="1"
-                android:text="社团"
-                android:button="@null"
                 android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/rb_bg_02"
+                android:button="@null"
                 android:gravity="center"
-                android:textSize="15sp"
-                android:paddingTop="2dp"
                 android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:text="社团"
                 android:textColor="@drawable/title_text_sel"
-                android:background="@drawable/rb_bg_02"/>
+                android:textSize="15sp" />
         </RadioGroup>
 
         <TextView
+            android:id="@+id/chat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="聊天小组"
-            android:id="@+id/chat"
-            android:textColor="@color/white"
-            android:layout_toEndOf="@+id/rg_group"
-            android:textSize="15sp"
             android:layout_centerVertical="true"
-            />
+            android:layout_toEndOf="@+id/rg_group"
+            android:text="聊天小组"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/ColorBg"
+            android:textSize="15sp" />
 
     </android.support.percent.PercentRelativeLayout>
 
 
     <FrameLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-        android:layout_below="@+id/title"
         android:id="@+id/fl_content"
-    />
-    </android.support.percent.PercentRelativeLayout>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title" />
+
+</android.support.percent.PercentRelativeLayout>

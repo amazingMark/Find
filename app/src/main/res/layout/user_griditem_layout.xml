@@ -18,5 +18,5 @@
         android:id="@+id/tv_club"
         android:gravity="center_horizontal"
         android:background="@drawable/orange_flat_button"
-        android:textColor="@color/white"/>
+        android:textColor="@color/ColorBg"/>
 </android.support.percent.PercentRelativeLayout>

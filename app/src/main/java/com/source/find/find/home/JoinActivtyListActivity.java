@@ -10,14 +10,16 @@ import android.util.DisplayMetrics;
 import android.view.WindowManager;
 import android.widget.ListView;
 
-import com.example.find.R;
+
+import com.source.find.find.R;
+import com.source.find.find.adapter.GridViewAdapter;
+import com.source.find.find.interfaceimpl.JoinActivityListOperator;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import Adapter.GridViewAdapter;
-import InterfaceRealization.JoinActivityListOperator;
+
 
 public class JoinActivtyListActivity extends AppCompatActivity {
 

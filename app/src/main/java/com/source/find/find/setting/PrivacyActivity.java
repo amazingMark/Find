@@ -4,9 +4,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
-import com.example.find.R;
+import com.source.find.find.R;
+import com.source.find.find.scrollpicsview.Switch;
 
-import MyView.Switch;
 
 public class PrivacyActivity extends AppCompatActivity {
 

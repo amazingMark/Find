@@ -9,18 +9,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".main.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".club.CreateClubActivity" />
         <activity android:name=".club.ClubHome" />
         <activity android:name=".club.SearchClubsActivity" />
         <activity android:name=".club.ClubDetail" />
         <activity android:name=".chat.ChatGroupActivity" />
-        <activity android:name=".chat.DefaultChatGroupDetailActivity" />
+        <activity android:name=".chat.DefaultChatGroupDetailActivity"/>
         <activity android:name=".chat.ChatGroupDetailActivity" />
         <activity android:name=".message.CommentOnMe" />
         <activity android:name=".chat.ApplyForChatGroupActivity" />
@@ -35,7 +31,51 @@
         <activity android:name=".club.CreateActivityActivity" />
         <activity android:name=".club.CreateVoteActivity" />
         <activity android:name=".club.CreatePostsActivity" />
-        <activity android:name=".club.AtOthersActivity"></activity>
+        <activity android:name=".club.AtOthersActivity"/>
+        <activity android:name=".loginandregister.LaunchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".setting.PersonInfoChangeActivity" />
+        <activity android:name=".setting.ChangeHeadActivity" />
+        <activity android:name=".setting.SchoolActivity" />
+        <activity android:name=".setting.PublicSchoolActivity" />
+        <activity android:name=".setting.MyActivityActivity" />
+        <activity android:name=".setting.OverActivity" />
+        <activity android:name=".setting.SystemSettingActivity" />
+        <activity android:name=".setting.AccountSafeActivity" />
+        <activity android:name=".setting.BindTelephoneActivity" />
+        <activity android:name=".setting.SettingCaptchaActivity" />
+        <activity android:name=".setting.BindSuccessActivity" />
+        <activity android:name=".setting.PwdChangeActivity" />
+        <activity android:name=".setting.SetNewPwdActivity" />
+        <activity android:name=".setting.SetPwdSuccessActivity" />
+        <activity android:name=".setting.PrivacyActivity" />
+        <activity android:name=".setting.NoticeSettingActivity" />
+        <activity android:name=".setting.ResponseActivity" />
+        <activity android:name=".setting.AboutActivity" />
+
+        <activity android:name=".home.UserActivity" />
+        <activity android:name=".home.TopicActivity" />
+        <activity android:name=".home.ChatActivity" />
+        <activity android:name=".home.PostDetailActivity" />
+        <activity android:name=".home.MoreActivity" />
+        <activity android:name=".home.ActicityActivity"/>
+        <activity android:name=".home.JoinActivtyListActivity"/>
+        <activity android:name=".home.SeePictureActivity"/>
+        <activity android:name=".home.ChatGroupActivity" />
+
+        <activity android:name=".loginandregister.LoginActivity" />
+        <activity android:name=".loginandregister.FindPasswordActivity" />
+        <activity android:name=".loginandregister.RegisterActivity" />
+        <activity android:name=".loginandregister.RegisterGetCaptchaActivity" />
+        <activity android:name=".loginandregister.UserInfoActivity" />
+        <activity android:name=".loginandregister.ChangePersonIntroduceActivity" />
+
     </application>
 
 </manifest>

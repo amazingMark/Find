@@ -14,7 +14,7 @@ public class ChatGroupActivity extends AppCompatActivity implements View.OnClick
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chat_group);
+        setContentView(R.layout.activity_chat_group_chat);
     }
 
     @Override

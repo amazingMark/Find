@@ -6,14 +6,16 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.GridView;
 
-import com.example.find.R;
+
+import com.source.find.find.R;
+import com.source.find.find.adapter.GridViewAdapter;
+import com.source.find.find.interfaceimpl.ChangeHeadGridViewOperator;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import Adapter.GridViewAdapter;
-import InterfaceRealization.ChangeHeadGridViewOperator;
+
 
 public class ChangeHeadActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.source.find.find.ScrollPicsView;
+package com.source.find.find.scrollpicsview;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;

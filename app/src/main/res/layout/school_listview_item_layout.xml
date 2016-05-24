@@ -23,7 +23,7 @@
         app:layout_marginTopPercent="5%"
         android:alpha="0.8"
         android:layout_gravity="top|right"
-        android:background="@color/colorTheme"
+        android:background="@color/ColorUniversal"
         />
     <TextView
         android:layout_width="wrap_content"
@@ -31,7 +31,7 @@
         android:text="28"
         android:textSize="18sp"
         android:id="@+id/tv_date"
-        android:textColor="@color/white"
+        android:textColor="@color/ColorBg"
         android:layout_gravity="top|right"
         app:layout_marginRightPercent="7.5%"
         app:layout_marginTopPercent="5%"
@@ -46,7 +46,7 @@
         app:layout_marginTopPercent="22%"
         android:alpha="0.8"
         android:layout_gravity="top|right"
-        android:background="@color/colorTheme"
+        android:background="@color/ColorUniversal"
         />
 
     <TextView
@@ -55,7 +55,7 @@
         android:text="2月"
         android:id="@+id/tv_month"
         android:textSize="15sp"
-        android:textColor="@color/white"
+        android:textColor="@color/ColorBg"
         android:layout_gravity="top|right"
         app:layout_marginRightPercent="7%"
         app:layout_marginTopPercent="22%"
@@ -64,7 +64,7 @@
     <android.support.percent.PercentRelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/black"
+        android:background="@color/ColorBlack"
         android:layout_gravity="bottom"
         app:layout_heightPercent="20%"
         android:id="@+id/rl_sign"
@@ -82,7 +82,7 @@
         android:textSize="15sp"
         android:layout_gravity="bottom|left"
         android:layout_alignParentStart="true"
-        android:textColor="@color/white"
+        android:textColor="@color/ColorBg"
         app:layout_marginLeftPercent="5%"
         app:layout_marginBottomPercent="4.5%"/>
 
@@ -93,7 +93,7 @@
         android:text="武大印刷社协摄影讲座"
         android:id="@+id/tv_club"
         android:textSize="15sp"
-        android:textColor="@color/white"
+        android:textColor="@color/ColorBg"
         app:layout_marginRightPercent="5%"
         android:layout_gravity="bottom|right"
         app:layout_marginBottomPercent="4.5%"

@@ -34,7 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/home_unselected"
+                android:src="@mipmap/home_unselected"
                 app:layout_heightPercent="60%" />
 
 
@@ -90,7 +90,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/msg_unselected"
+                android:src="@mipmap/msg_unselected"
                 app:layout_heightPercent="60%" />
 
 
@@ -118,7 +118,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/setting_unselected"
+                android:src="@mipmap/setting_unselected"
                 app:layout_heightPercent="60%" />
 
 

@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryDark">#FF9C0F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="ColorTitleBar">#FF9C0F</color>
     <color name="ColorFrameBg">#FF9C0F</color>
     <color name="ColorPicBg">#FF9C0F</color>
+    <color name="ColorLaunchBg">#FF9C0F</color>
+    <color name="ColorUniversal">#FF9C0F</color>
     <color name="ColorBg">#FFFFFF</color>
     <color name="ColorContentBg">#f0eff5</color>
     <color name="ColorTabText">#666666</color>
@@ -14,4 +16,6 @@
     <color name="ColorModuleText">#999999</color>
     <color name="ColorSearchBg">#EEEEEE</color>
     <color name="ColorLine">#EBEBEB</color>
+    <color name="ColorBlue">#2866FC</color>
+    <color name="ColorBlack">#000000</color>
 </resources>

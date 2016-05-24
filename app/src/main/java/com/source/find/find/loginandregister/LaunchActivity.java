@@ -6,7 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.find.R;
+import com.source.find.find.R;
+
 
 public class LaunchActivity extends AppCompatActivity {
 
@@ -16,7 +17,7 @@ public class LaunchActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_launch);
         bt_login = (Button)findViewById(R.id.bt_login);
         bt_register = (Button)findViewById(R.id.bt_register);
 
@@ -27,6 +28,7 @@ public class LaunchActivity extends AppCompatActivity {
     }
 
     private class ClickListener implements View.OnClickListener {
+
         public void onClick(View v) {
             if (v.getId() == R.id.bt_login) {
                 Intent intent = new Intent(LaunchActivity.this, LoginActivity.class);

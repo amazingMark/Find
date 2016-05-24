@@ -15,7 +15,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/selected2"
+        android:src="@mipmap/selected2"
         android:layout_marginBottom="10dp"
         android:layout_centerHorizontal="true"
         android:id="@+id/im_submit"
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:text="图片保存成功"
         android:textSize="20sp"
-        android:textColor="@color/white"
+        android:textColor="@color/ColorBg"
         android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/im_submit"

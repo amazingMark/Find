@@ -6,7 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.find.R;
+import com.source.find.find.R;
+
 
 public class RegisterGetCaptchaActivity extends AppCompatActivity {
 

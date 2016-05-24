@@ -4,25 +4,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/navy"
-    tools:context="com.example.find.PersonSetting.NoticeSettingActivity">
+    android:background="@color/ColorContentBg"
+    tools:context=".setting.NoticeSettingActivity">
 
     <android.support.percent.PercentRelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorTheme"
+        android:background="@color/ColorUniversal"
         app:layout_heightPercent="11%"
         android:id="@+id/rl_title">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/iv_back"
-            android:src="@mipmap/back"
-            android:layout_alignParentLeft="true"
+        <ImageButton
+            android:id="@+id/ib_prl_register_title_pre"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@mipmap/back_previous"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
-            app:layout_marginLeftPercent="5%"/>
+            app:layout_heightPercent="70%"
+            app:layout_marginLeftPercent="3%"
+            app:layout_widthPercent="10%"/>
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -44,7 +46,7 @@
         android:layout_below="@+id/rl_title"
         app:layout_marginTopPercent="2%"
         app:layout_heightPercent="7%"
-        android:background="@color/white"
+        android:background="@color/ColorBg"
         android:id="@+id/rl_control_1">
 
         <TextView
@@ -55,7 +57,7 @@
             app:layout_marginLeftPercent="5%"
             android:layout_centerVertical="true"
             />
-        <MyView.Switch
+        <com.source.find.find.scrollpicsview.Switch
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             app:layout_marginLeftPercent="5%"
@@ -73,7 +75,7 @@
         android:layout_below="@+id/rl_control_1"
         app:layout_marginTopPercent="2%"
         app:layout_heightPercent="7%"
-        android:background="@color/white"
+        android:background="@color/ColorBg"
         android:id="@+id/rl_control_2">
 
         <TextView
@@ -84,7 +86,7 @@
             app:layout_marginLeftPercent="5%"
             android:layout_centerVertical="true"
             />
-        <MyView.Switch
+        <com.source.find.find.scrollpicsview.Switch
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -92,7 +94,7 @@
             app:layout_marginRightPercent="3.5%"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:textColor="@color/textgrey"
+            android:textColor="@color/ColorModuleText"
             android:id="@+id/sw_address"
             />
 
@@ -104,7 +106,7 @@
         android:layout_below="@+id/rl_control_2"
         app:layout_marginTopPercent="2%"
         app:layout_heightPercent="7%"
-        android:background="@color/white"
+        android:background="@color/ColorBg"
         android:id="@+id/rl_control_3">
 
         <TextView
@@ -115,7 +117,7 @@
             app:layout_marginLeftPercent="5%"
             android:layout_centerVertical="true"
             />
-        <MyView.Switch
+        <com.source.find.find.scrollpicsview.Switch
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             app:layout_marginLeftPercent="5%"
@@ -133,7 +135,7 @@
         android:layout_below="@+id/rl_control_3"
         app:layout_marginTopPercent="0.5%"
         app:layout_heightPercent="7%"
-        android:background="@color/white"
+        android:background="@color/ColorBg"
         android:id="@+id/rl_control_4">
 
         <TextView
@@ -144,7 +146,7 @@
             app:layout_marginLeftPercent="5%"
             android:layout_centerVertical="true"
             />
-        <MyView.Switch
+        <com.source.find.find.scrollpicsview.Switch
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -152,7 +154,7 @@
             app:layout_marginRightPercent="3.5%"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:textColor="@color/textgrey"
+            android:textColor="@color/ColorModuleText"
             android:id="@+id/sw_commentme"
             />
         </android.support.percent.PercentRelativeLayout>
@@ -162,7 +164,7 @@
             android:layout_below="@+id/rl_control_4"
             app:layout_marginTopPercent="0.5%"
             app:layout_heightPercent="7%"
-            android:background="@color/white"
+            android:background="@color/ColorBg"
             android:id="@+id/rl_control_5">
 
             <TextView
@@ -173,7 +175,7 @@
                 app:layout_marginLeftPercent="5%"
                 android:layout_centerVertical="true"
                 />
-            <MyView.Switch
+            <com.source.find.find.scrollpicsview.Switch
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -181,7 +183,7 @@
                 app:layout_marginRightPercent="3.5%"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:textColor="@color/textgrey"
+                android:textColor="@color/ColorModuleText"
                 android:id="@+id/sw_likeme"
                 />
 
@@ -193,7 +195,7 @@
         android:layout_below="@+id/rl_control_5"
         app:layout_marginTopPercent="0.5%"
         app:layout_heightPercent="7%"
-        android:background="@color/white"
+        android:background="@color/ColorBg"
         android:id="@+id/rl_control_6">
 
         <TextView
@@ -204,7 +206,7 @@
             app:layout_marginLeftPercent="5%"
             android:layout_centerVertical="true"
             />
-        <MyView.Switch
+        <com.source.find.find.scrollpicsview.Switch
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -212,7 +214,7 @@
             app:layout_marginRightPercent="3.5%"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:textColor="@color/textgrey"
+            android:textColor="@color/ColorModuleText"
             android:id="@+id/sw_atme"
             />
         </android.support.percent.PercentRelativeLayout>
@@ -222,7 +224,7 @@
             android:layout_below="@+id/rl_control_6"
             app:layout_marginTopPercent="0.5%"
             app:layout_heightPercent="7%"
-            android:background="@color/white"
+            android:background="@color/ColorBg"
             android:id="@+id/rl_control_7">
 
             <TextView
@@ -233,7 +235,7 @@
                 app:layout_marginLeftPercent="5%"
                 android:layout_centerVertical="true"
                 />
-            <MyView.Switch
+            <com.source.find.find.scrollpicsview.Switch
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -241,7 +243,7 @@
                 app:layout_marginRightPercent="3.5%"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:textColor="@color/textgrey"
+                android:textColor="@color/ColorModuleText"
                 android:id="@+id/sw_activitynotice"
                 />
 
@@ -253,7 +255,7 @@
         android:layout_below="@+id/rl_control_7"
         app:layout_marginTopPercent="0.5%"
         app:layout_heightPercent="7%"
-        android:background="@color/white"
+        android:background="@color/ColorBg"
         android:id="@+id/rl_control_8">
 
         <TextView
@@ -290,7 +292,7 @@
         android:layout_below="@+id/rl_control_8"
         app:layout_marginTopPercent="3%"
         app:layout_heightPercent="7%"
-        android:background="@color/white"
+        android:background="@color/ColorBg"
         android:id="@+id/rl_control_9">
 
         <TextView
@@ -301,7 +303,7 @@
             app:layout_marginLeftPercent="5%"
             android:layout_centerVertical="true"
             />
-        <MyView.Switch
+        <com.source.find.find.scrollpicsview.Switch
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -309,7 +311,7 @@
             app:layout_marginRightPercent="3.5%"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:textColor="@color/textgrey"
+            android:textColor="@color/ColorModuleText"
             android:id="@+id/sw_night_defend"
             />
 

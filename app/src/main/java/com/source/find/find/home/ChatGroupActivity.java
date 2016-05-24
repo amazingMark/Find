@@ -6,14 +6,14 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.GridView;
 
-import com.example.find.R;
+
+import com.source.find.find.R;
+import com.source.find.find.adapter.GridViewAdapter;
+import com.source.find.find.interfaceimpl.ChatGroupGridViewOperator;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-
-import Adapter.GridViewAdapter;
-import InterfaceRealization.ChatGroupGridViewOperator;
 
 public class ChatGroupActivity extends AppCompatActivity {
 
@@ -23,7 +23,7 @@ public class ChatGroupActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chat_group);
+        setContentView(R.layout.activity_chat_group_chat);
         gridview = (GridView)findViewById(R.id.gridView);
         ls=getLs();
         gridview.setAdapter(new GridViewAdapter(this,ls,new ChatGroupGridViewOperator()));

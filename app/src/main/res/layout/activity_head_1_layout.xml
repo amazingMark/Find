@@ -16,7 +16,7 @@
     <android.support.percent.PercentRelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/black"
+        android:background="@color/ColorBlack"
         android:layout_gravity="bottom"
         app:layout_heightPercent="20%"
         android:id="@+id/rl_sign"
@@ -31,7 +31,7 @@
         android:textSize="15sp"
         android:layout_gravity="bottom|left"
         android:layout_alignParentStart="true"
-        android:textColor="@color/white"
+        android:textColor="@color/ColorBg"
         app:layout_marginLeftPercent="5%"
         app:layout_marginBottomPercent="4.5%"/>
 
@@ -42,9 +42,9 @@
         android:text="武大印刷社协摄影讲座"
         android:id="@+id/tv_club"
         android:textSize="15sp"
-        android:textColor="@color/white"
+        android:textColor="@color/ColorBg"
         app:layout_marginRightPercent="5%"
         android:layout_gravity="bottom|right"
-        app:layout_marginBottomPercent="4.5%"
-        />
+        app:layout_marginBottomPercent="4.5%" />
+
 </android.support.percent.PercentFrameLayout>

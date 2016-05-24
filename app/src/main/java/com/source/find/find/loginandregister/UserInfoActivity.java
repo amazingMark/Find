@@ -2,8 +2,8 @@ package com.source.find.find.loginandregister;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import com.source.find.find.R;
 
-import com.example.find.R;
 
 public class UserInfoActivity extends AppCompatActivity {
 

@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             app:layout_heightPercent="3.3%"
             app:layout_marginTopPercent="27%"
-            android:background="@color/navy"
+            android:background="@color/ColorContentBg"
             android:id="@+id/divider_1"
             android:layout_below="@+id/im_head"
             />
@@ -76,7 +76,7 @@
             android:layout_height="wrap_content"
             app:layout_heightPercent="0.5%"
             app:layout_marginTopPercent="3%"
-            android:background="@color/navy"
+            android:background="@color/ColorContentBg"
             android:id="@+id/divider_2"
             android:layout_below="@+id/tv_club"
             />
