@@ -71,6 +71,7 @@ public class TopicActivity extends AppCompatActivity {
 
 
         for(int i=0;i<10;i++){
+			
             map.put("head",bitmap1);
             map.put("name","金小洛");
             map.put("club","武大印包");
